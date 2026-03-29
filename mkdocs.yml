@@ -1,0 +1,48 @@
+site_name: Matt Pfefferle
+site_description: Building tools for AI-augmented software development
+site_url: https://pfeff.github.io/
+
+theme:
+  name: material
+  features:
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+plugins:
+  - search
+  - blog
+
+nav:
+  - Home: index.md
+  - Projects:
+    - projects/agent-coordinator/index.md
+    - projects/agent-coordinator/architecture.md
+    - projects/agent-coordinator/api-reference.md
+    - projects/agent-coordinator/getting-started.md
+    - projects/claude-skills/index.md
+  - Blog:
+    - blog/index.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.details
+  - toc:
+      permalink: true
